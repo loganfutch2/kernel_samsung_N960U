@@ -10,4 +10,10 @@ make -C $(pwd) O=out -j8 ARCH=arm64 CROSS_COMPILE=~/toolchains/note9/aarch64-lin
 
 cp out/arch/arm64/boot/Image $(pwd)/arch/arm64/boot/Image
 
+cp $(pwd)/out/arch/arm64/boot/Image.gz $(pwd)/prebuilt_dtb/Image.gz
 
+cd $(pwd)/prebuilt_dtb
+cp Image.gz Image.gz-dtb
+cat dt.img >> Image.gz-dtb
+
+echo "Find the Image.gz-dtb in prebuilt_dtb"
