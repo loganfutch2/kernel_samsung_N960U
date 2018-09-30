@@ -97,3 +97,4 @@ x509.genkey
 #
 kernel-prebuilt/
 prebuilt_dtb/Image*
+arch/arm64/boot/Image
