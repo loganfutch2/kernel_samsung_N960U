@@ -96,5 +96,5 @@ x509.genkey
 # Personal stuff
 #
 kernel-prebuilt/
-prebuilt_dtb/Image*
+prebuilt_dtb/Image.gz-dtb
 arch/arm64/boot/Image
